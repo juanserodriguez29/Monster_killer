@@ -4,4 +4,4 @@ Este es un juego que simula una lucha entre un monstruo y tú. Tendrás la opci�
 
 También, podrás tener un registro de cada uno de las acciones realizadas en tu consola.
 
-Si quieres conocer un poco más sobre mí, te invito a que ingreses a mi sitio (usa Ctrl + Click para abrir en pestaña nueva): My blog[juanserodrigue29.github.io]
+Si quieres conocer un poco más sobre mí, te invito a que ingreses a mi sitio (usa Ctrl + Click para abrir en pestaña nueva): [My blog](https://juanserodriguez29.github.io)
