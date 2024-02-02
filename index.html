@@ -10,16 +10,20 @@
     <script src="assets/scripts/app.js" defer></script>
   </head>
   <body>
-    <section id="health-levels">
-      <h2>MONSTER HEALTH</h2>
-      <progress id="monster-health" max="100" value="100">100%</progress>
-      <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>
-      <progress id="player-health" max="100" value="100">100%</progress>
+    <section id="gifs">
+      <img src="./assets/Images/Monster.gif" alt="Monster"></img>
+      <section id="health-levels">
+        <h2>MONSTER HEALTH</h2>
+        <progress id="monster-health" max="100" value="100">100%</progress>
+        <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>
+        <progress id="player-health" max="100" value="100">100%</progress>
+      </section>
+      <img style="transform: scaleX(-1)" src="./assets/Images/undefined - Imgur.gif" alt="Player"></img>
     </section>
-    <section id="controls">
+      <section id="controls">
       <button id="attack-btn">ATTACK</button>
       <button id="strong-attack-btn">STRONG ATTACK</button>
-      <button id="heal-btn">HEAL</button>
+      <button id="heal-btn">HEALTH</button>
       <button id="log-btn">SHOW LOG</button>
     </section>
   </body>

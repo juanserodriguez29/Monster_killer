@@ -11,7 +11,7 @@ const LOG_EVENT_MONSTER_ATTACK = "MONSTER_ATTACK";
 const LOG_EVENT_PLAYER_HEAL = "PLAYER_HEAL";
 const LOG_EVENT_GAME_OVER = "GAME_OVER";
 
-const enteredValue = prompt("Vida máxima para usted y el monstruo", "100");
+const enteredValue = prompt("Maximum life for you and the monster", "100");
 
 let chooseMaxLife = parseInt(enteredValue);
 let battleLog = [];
@@ -85,30 +85,30 @@ function endRound() {
     removeBonusLife();
     currentPlayerHealth = initialPlayerHealth;
     setPlayerHealth(initialPlayerHealth);
-    alert("Debiste morir, pero la vida adicional te ha salvado");
+    alert("You should have died, but the extra life has saved you");
   }
 
   if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
-    alert("Ganaste!!");
+    alert("You win!!");
     writeToLog(
       LOG_EVENT_GAME_OVER,
-      "Ganó el jugador",
+      "The player won",
       currentMonsterHealth,
       currentPlayerHealth
     );
   } else if (currentPlayerHealth <= 0 && currentMonsterHealth > 0) {
-    alert("Perdiste!!");
+    alert("You lost!!");
     writeToLog(
       LOG_EVENT_GAME_OVER,
-      "Perdió el jugador",
+      "The player lost",
       currentMonsterHealth,
       currentPlayerHealth
     );
   } else if (currentPlayerHealth <= 0 && currentMonsterHealth <= 0) {
-    alert("Empate!");
+    alert("Tie!");
     writeToLog(
       LOG_EVENT_GAME_OVER,
-      "Terminó en empate",
+      "It ended in a tie",
       currentMonsterHealth,
       currentPlayerHealth
     );
@@ -151,7 +151,7 @@ function strongAttackHandler() {
 function healPlayerHandler() {
   let healValue;
   if (currentPlayerHealth >= chooseMaxLife - HEAL_VALUE) {
-    alert("No puedes tener más salud que la salud inicial");
+    alert("You cannot have more health than the initial health");
     healValue = chooseMaxLife - currentPlayerHealth;
   } else {
     healValue = HEAL_VALUE;

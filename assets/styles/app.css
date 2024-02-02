@@ -60,7 +60,7 @@ button:active {
 
 #health-levels,
 #controls {
-  margin: 2rem auto;
+  margin: 0.3rem auto;
   width: 30rem;
   text-align: center;
   border-radius: 10px;
@@ -83,4 +83,12 @@ button:active {
   border-radius: 10px;
   text-align: center;
   margin: 0 0.5rem;
+}
+
+#gifs{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
 }
